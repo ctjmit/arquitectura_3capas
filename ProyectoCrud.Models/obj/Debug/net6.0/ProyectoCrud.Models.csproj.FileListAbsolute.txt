@@ -1,0 +1,12 @@
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.Models\bin\Debug\net6.0\ProyectoCrud.Models.deps.json
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.Models\bin\Debug\net6.0\ProyectoCrud.Models.dll
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.Models\bin\Debug\net6.0\ProyectoCrud.Models.pdb
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.Models\obj\Debug\net6.0\ProyectoCrud.Models.csproj.AssemblyReference.cache
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.Models\obj\Debug\net6.0\ProyectoCrud.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.Models\obj\Debug\net6.0\ProyectoCrud.Models.AssemblyInfoInputs.cache
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.Models\obj\Debug\net6.0\ProyectoCrud.Models.AssemblyInfo.cs
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.Models\obj\Debug\net6.0\ProyectoCrud.Models.csproj.CoreCompileInputs.cache
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.Models\obj\Debug\net6.0\ProyectoCrud.Models.dll
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.Models\obj\Debug\net6.0\refint\ProyectoCrud.Models.dll
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.Models\obj\Debug\net6.0\ProyectoCrud.Models.pdb
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.Models\obj\Debug\net6.0\ref\ProyectoCrud.Models.dll

@@ -1,0 +1,15 @@
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.BL\bin\Debug\net6.0\ProyectoCrud.BL.deps.json
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.BL\bin\Debug\net6.0\ProyectoCrud.BL.dll
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.BL\bin\Debug\net6.0\ProyectoCrud.BL.pdb
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.BL\obj\Debug\net6.0\ProyectoCrud.BL.csproj.AssemblyReference.cache
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.BL\obj\Debug\net6.0\ProyectoCrud.BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.BL\obj\Debug\net6.0\ProyectoCrud.BL.AssemblyInfoInputs.cache
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.BL\obj\Debug\net6.0\ProyectoCrud.BL.AssemblyInfo.cs
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.BL\obj\Debug\net6.0\ProyectoCrud.BL.csproj.CoreCompileInputs.cache
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.BL\obj\Debug\net6.0\ProyectoCrud.BL.dll
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.BL\obj\Debug\net6.0\refint\ProyectoCrud.BL.dll
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.BL\obj\Debug\net6.0\ProyectoCrud.BL.pdb
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.BL\obj\Debug\net6.0\ref\ProyectoCrud.BL.dll
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.BL\bin\Debug\net6.0\ProyectoCrud.DAL.dll
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.BL\bin\Debug\net6.0\ProyectoCrud.DAL.pdb
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.BL\obj\Debug\net6.0\ProyectoCrud.BL.csproj.CopyComplete
