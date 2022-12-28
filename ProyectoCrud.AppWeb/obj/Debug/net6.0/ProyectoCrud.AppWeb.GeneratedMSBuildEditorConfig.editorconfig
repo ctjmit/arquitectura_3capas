@@ -12,7 +12,7 @@ build_property.RootNamespace = ProyectoCrud.AppWeb
 build_property.ProjectDir = D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.AppWeb\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.AppWeb
 build_property._RazorSourceGeneratorDebug = 
 

@@ -1,25 +1,13 @@
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using ProyectoCrud.BL.Services;
-using ProyectoCrud.DAL.DataContext;
-using ProyectoCrud.DAL.Models;
-using ProyectoCrud.DAL.Repositorio;
+using ProyectoCrud.DAL;
+using ProyectoCrud.DAL.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<DbcrudcoreContext>(options => {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("cadenaSQL"));
-});
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
-// primera innyeccion de dependencias
-//todo controlador que use esta interfaz <IRepositorioGeneric<Usuario> estara trabajando directamente con la clase ContactoRepositories
-builder.Services.AddScoped<IRepositorioGeneric<Usuario>, ContactoRepositories>();
-
-//segunda inyeccion de dependencia
-builder.Services.AddScoped<IUsuarioService, UsuarioService>();
-
+builder.Services.AddScoped<IGenericDA, UsuarioDA>();
 
 var app = builder.Build();
 
