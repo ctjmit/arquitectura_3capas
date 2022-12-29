@@ -1,0 +1,89 @@
+﻿@model List<ProyectoCrud.DAL.Models.Usuario>
+
+
+ 
+    <div class="card">
+        <div class="card-body">
+        <a class="btn btn-success" asp-controller="Usuario" asp-action="Crear">Agregar</a>
+            <div class="card-title">
+            <h2>Lista de Usuarios</h2>
+            </div>
+            <table class="table table-bordered table-striped">
+                <thead class="bg-dark text-white"> 
+                    <tr>
+                        <td>Id</td>
+                        <td>Nombre</td>
+                        <td>Edad</td>
+                        <td>Email</td>
+                        <td>Salario</td>
+                        <td>Fecha</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach(ProyectoCrud.DAL.Models.Usuario item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(itemdisplay=>item.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay=>item.Nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay=>item.Edad)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay=>item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay=>item.Salario)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay=>item.Fecha)
+                        </td>
+                        <td>
+                            <a onclick="Edit(this)" class="btn btn-primary">Editar</a> |
+                            <a onclick="Eliminar(this)" class="btn btn-danger">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        
+       function Edit(element){
+            var id=$(element).closest('tr').find('input[type=hidden]').val();
+             window.location.href = "/Usuario/Edit?Id="+id;
+        }
+
+    function Eliminar(element) {
+        var id = $(element).closest('tr').find('input[type=hidden]').val();
+        if(confirm("Seguro que quieres eliminar?")){
+            $.ajax({
+                type: "POST",
+                url: "/Usuario/EliminarUsuario",
+                data: {Id: id},
+                success: function (data) {
+                    if (data == 'pass') {
+                        alert('Usuario Eliminado.')
+                        window.location.reload();
+                    } else {
+                        alert('el proceso fallo :' + data)
+                    }
+                },
+                failure: function (err) {
+
+                }
+            });
+        }
+        //window.location.href = "/Usuario/Edit?Id=" + Id;
+    }
+       
+
+    </script>
+
+

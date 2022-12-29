@@ -9,6 +9,9 @@ namespace ProyectoCrud.DAL.Interface
 {
     public interface IGenericDA
     {
-        List<MU::Usuario> GetUsuarios();
+        Task<List<MU::Usuario>> GetUsuarios();
+        Task<MU::Usuario> GetUsuariosbyid(int id);
+        Task<string> Guardar(MU::Usuario usuario);
+        Task<string> Eliminar(int id);
     }
 }
