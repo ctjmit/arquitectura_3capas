@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.AppWeb
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/creativa_trabajo/visualStudio22/CRUDUSER/ProyectoCrud.AppWeb/Views/Account/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/creativa_trabajo/visualStudio22/CRUDUSER/ProyectoCrud.AppWeb/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/creativa_trabajo/visualStudio22/CRUDUSER/ProyectoCrud.AppWeb/Views/Account/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RyYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/creativa_trabajo/visualStudio22/CRUDUSER/ProyectoCrud.AppWeb/Views/Account/resetPass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxyZXNldFBhc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/creativa_trabajo/visualStudio22/CRUDUSER/ProyectoCrud.AppWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -28,8 +44,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/creativa_trabajo/visualStudio22/CRUDUSER/ProyectoCrud.AppWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[D:/creativa_trabajo/visualStudio22/CRUDUSER/ProyectoCrud.AppWeb/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/creativa_trabajo/visualStudio22/CRUDUSER/ProyectoCrud.AppWeb/Views/Usuario/Crear.cshtml]

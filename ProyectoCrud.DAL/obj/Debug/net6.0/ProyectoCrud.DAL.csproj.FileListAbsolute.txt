@@ -1,4 +1,5 @@
 D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.DAL\bin\Debug\net6.0\ProyectoCrud.DAL.deps.json
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.DAL\bin\Debug\net6.0\ProyectoCrud.DAL.runtimeconfig.json
 D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.DAL\bin\Debug\net6.0\ProyectoCrud.DAL.dll
 D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.DAL\bin\Debug\net6.0\ProyectoCrud.DAL.pdb
 D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.DAL\obj\Debug\net6.0\ProyectoCrud.DAL.csproj.AssemblyReference.cache
@@ -9,6 +10,5 @@ D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.DAL\obj\Debug\net6.0\Pr
 D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.DAL\obj\Debug\net6.0\ProyectoCrud.DAL.dll
 D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.DAL\obj\Debug\net6.0\refint\ProyectoCrud.DAL.dll
 D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.DAL\obj\Debug\net6.0\ProyectoCrud.DAL.pdb
-D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.DAL\obj\Debug\net6.0\ref\ProyectoCrud.DAL.dll
-D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.DAL\bin\Debug\net6.0\ProyectoCrud.DAL.runtimeconfig.json
 D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.DAL\obj\Debug\net6.0\ProyectoCrud.DAL.genruntimeconfig.cache
+D:\creativa_trabajo\visualStudio22\CRUDUSER\ProyectoCrud.DAL\obj\Debug\net6.0\ref\ProyectoCrud.DAL.dll

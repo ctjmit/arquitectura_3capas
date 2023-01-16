@@ -117,7 +117,7 @@ namespace ProyectoCrud.DAL
                 }
                 catch(Exception ex)
                 {
-
+                    Response = ex.Message;
                 }
             }
             return Response;

@@ -37,6 +37,5 @@ namespace ProyectoCrud.AppWeb.Controllers
             return Json(Response);
         }
 
-
     }
 }

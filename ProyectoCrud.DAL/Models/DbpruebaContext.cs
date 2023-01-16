@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace ProyectoCrud.DAL.Models
 {
-    public partial class DbpruebaContext : DbContext
+    public partial class DbpruebaContext : IdentityDbContext<AppUser>
     {
-        public DbpruebaContext()
+       public DbpruebaContext()
         {
         }
 
@@ -14,8 +16,9 @@ namespace ProyectoCrud.DAL.Models
             : base(options)
         {
         }
-
+       
         public virtual DbSet<Usuario> Usuarios { get; set; }
+        public virtual DbSet<AppUser> Appusers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -23,6 +26,8 @@ namespace ProyectoCrud.DAL.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Ignore<Usuario>();
             modelBuilder.Entity<Usuario>(entity =>
             {
                 entity.HasKey(e => e.Id).HasName("PK__usuario__3214EC07B178651B");
@@ -49,7 +54,21 @@ namespace ProyectoCrud.DAL.Models
             OnModelCreatingPartial(modelBuilder);
         }
 
+        public override int SaveChanges()
+        {
+            foreach (var item in ChangeTracker.Entries()
+                .Where(e => e.State == EntityState.Deleted && 
+                e.Metadata.GetProperties().Any(x => x.Name == "EstaBorrado")))
+            {
+                item.State = EntityState.Unchanged;
+                item.CurrentValues["EstaBorrado"] = true;
+            }
+            return base.SaveChanges();
+        }
+
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+
     }
 
 }

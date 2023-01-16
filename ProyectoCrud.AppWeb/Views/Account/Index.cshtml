@@ -1,0 +1,83 @@
+﻿@model List<ProyectoCrud.DAL.Models.AppUser>
+
+
+
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">
+            <h2>Usuarios Registrados</h2>
+        </div>
+        <table class="table table-bordered table-striped" id="tblist">
+            <thead class="bg-dark text-white">
+                <tr>       
+                    <td>Nombre Usuario</td>
+                    <td>Nombre</td>
+                    <td>Apellido</td>
+                    <td>Email</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (ProyectoCrud.DAL.Models.AppUser item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(itemdisplay=>item.UserName)
+                            @Html.HiddenFor(itemdisplay=>item.UserName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay=>item.FirstName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay=>item.LastName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay=>item.Email)
+                        </td>
+                        <td>
+                            <a onclick="Deshabilitar(this)" class="btn btn-danger">Deshabilitar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
+
+
+
+<script type="text/javascript">
+    var js = jQuery.noConflict(true);
+    js(document).ready(function()
+    {
+        js('#tblist').DataTable({
+
+        });
+    });
+    function Deshabilitar(element) {
+        var UserName = $(element).closest('tr').find('input[type=hidden]').val();
+        if (confirm("Seguro que quieres deshabilitar?")) {
+            $.ajax({
+                type: "POST",
+                url: "/Account/SoftDelete",
+                data: { UserName},
+                success: function (data) {
+                    if (data == 'EstaBorrado') {
+                        alert('Usuario deshabilitado.')
+                        window.location.reload();
+                    } else {
+                        alert('el proceso fallo :' + data)
+                    }
+                },
+                failure: function (err) {
+
+                }
+            });
+        }
+    }
+</script>
+

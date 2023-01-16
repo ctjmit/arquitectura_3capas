@@ -8,7 +8,7 @@
             <div class="card-title">
             <h2>Lista de Usuarios</h2>
             </div>
-            <table class="table table-bordered table-striped">
+        <table class="table table-bordered table-striped" id="tblist">
                 <thead class="bg-dark text-white"> 
                     <tr>
                         <td>Id</td>
@@ -53,8 +53,20 @@
             </table>
         </div>
     </div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
 
     <script type="text/javascript">
+
+        var js = jQuery.noConflict(true);
+        js(document).ready(function()
+        {
+            LoadListing()
+            js('#tblist').DataTable({
+
+            });
+        });
         
        function Edit(element){
             var id=$(element).closest('tr').find('input[type=hidden]').val();
@@ -83,7 +95,33 @@
         }
         //window.location.href = "/Usuario/Edit?Id=" + Id;
     }
-       
+    //function LoadListing()
+    //{
+    //    var empdata=[];
+    //    $.ajax({
+    //        type: "POST",
+    //        url: "/Usuario/GetAll",
+    //        async: false,
+    //        success: function (data) {
+    //           $.each(data, function(key, value)
+    //           {
+    //                var editbtn="<a onclick='Edit(this)' class='btn btn-primary'>Editar</a>";
+    //                var deletetbtn="<a onclick='Eliminar(this)' class='btn btn-danger'>Eliminar</a>";
+    //                var hidden= "<input type='hidden' value" + value.id + "/>";
+    //                var action = editbtn + " | " + deletetbtn + hidden;
+    //                empdata.push([value.id, value.nombre,
+    //                value.edad, value.email, value.salario, 
+    //                value.fecha,action])
+    //           })
+    //        },
+    //        failure: function (err) {
+
+    //        }
+    //    });
+    //    js('#tblist').DataTable({
+    //        data: empdata
+    //    });
+    //}
 
     </script>
 
